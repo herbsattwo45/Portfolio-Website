@@ -1,0 +1,259 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #61dafb;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Navbar Styling */
+nav {
+  background: #1f1f1f;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #61dafb;
+}
+
+/* Page Container */
+.page-container {
+  margin-top: 80px;
+  padding: 30px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.about-container {
+  text-align: left;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 8px;
+  background: #292929;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.about-details strong {
+  color: #61dafb;
+}
+.skills-container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #292929;
+  border-radius: 8px;
+}
+
+.skills-section h2 {
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-section li {
+  font-size: 1.2rem;
+  padding: 5px;
+  border-bottom: 1px solid #444;
+}
+
+.skills-section li:last-child {
+  border-bottom: none;
+}
+.services-container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #292929;
+  border-radius: 8px;
+}
+
+.service-section h2 {
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.service-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-section li {
+  font-size: 1.2rem;
+  padding: 5px;
+  border-bottom: 1px solid #444;
+}
+
+.service-section li:last-child {
+  border-bottom: none;
+}
+.services-container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.service-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #292929;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-section:hover {
+  transform: scale(1.02);
+  background: #333;
+}
+
+.service-section h2 {
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.service-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-section li {
+  font-size: 1.2rem;
+  padding: 5px;
+  border-bottom: 1px solid #444;
+}
+
+.service-section li:last-child {
+  border-bottom: none;
+}
+
+/* Hire Me Button */
+.hire-me-container {
+  margin-top: 20px;
+}
+
+.hire-me-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #61dafb;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.hire-me-button:hover {
+  background: #50b8e7;
+}
+.resume-container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.resume-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #292929;
+  border-radius: 8px;
+}
+
+.resume-section h2 {
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.job {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.job h3 {
+  color: #f4f4f4;
+  margin-bottom: 5px;
+}
+
+.job p {
+  color: #bbb;
+  font-style: italic;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
