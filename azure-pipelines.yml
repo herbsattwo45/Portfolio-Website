@@ -3,11 +3,11 @@ trigger:
     include:
       - main
 
-variables:
-  - group: VercelSecrets  # 👈 This connects to the variable group with your VERCEL_TOKEN
-
 pool:
   vmImage: 'ubuntu-latest'
+
+variables:
+- group: vercel-token-group   # Only if you're using a Variable Group
 
 steps:
   - task: NodeTool@0
@@ -18,5 +18,6 @@ steps:
   - script: npm install -g vercel
     displayName: 'Install Vercel CLI'
 
-- script: vercel --prod --yes --token=$(VERCEL_TOKEN)
-  displayName: 'Deploy to Vercel'
+  - script: vercel --prod --yes --token=$(VERCEL_TOKEN)
+    displayName: 'Deploy to Vercel'
+
