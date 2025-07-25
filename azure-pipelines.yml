@@ -3,6 +3,9 @@ trigger:
     include:
       - main
 
+variables:
+  - group: VercelSecrets  # 👈 This connects to the variable group with your VERCEL_TOKEN
+
 pool:
   vmImage: 'ubuntu-latest'
 
