@@ -7,7 +7,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-- group: vercel-token-group   # Only if you're using a Variable Group
+- group: VercelSecrets  # Updated variable group name
 
 steps:
   - task: NodeTool@0
@@ -20,4 +20,3 @@ steps:
 
   - script: vercel --prod --yes --token=$(VERCEL_TOKEN)
     displayName: 'Deploy to Vercel'
-
