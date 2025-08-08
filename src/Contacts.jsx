@@ -3,7 +3,7 @@ function Contacts() {
       <div>
         <h1>Contact Me</h1>
         <p>Email:herbsattwo@gmail.com</p>
-        <p>Phone: +27639943302</p>
+        <p>Phone: +27639943305</p>
       </div>
     );
   }
